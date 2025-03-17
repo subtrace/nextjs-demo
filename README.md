@@ -6,22 +6,27 @@ headers, payload, and latency of each request.
 
 With Subtrace, you can debug your production app way faster.
 
-Download Subtrace on your machine:
+Clone this repo, and download Subtrace on your machine:
 
 ```bash
 curl -fSLO "https://subtrace.dev/download/$(uname -s)/$(uname -m)/subtrace" && chmod +x ./subtrace
 ```
 
-Clone this repo, and start the Next.js app with Subtrace.
+Get a `SUBTRACE_TOKEN` from the Subtrace [dashboard](https://subtrace.dev/dashboard) and set it as
+an environment variable.
+
+```bash
+# get a tracer token for free at https://subtrace.dev/dashboard
+export SUBTRACE_TOKEN=subt_...xxxxx
+```
+
+Start the Next.js app with Subtrace.
 
 ```bash
 npm install
 ./subtrace run -- npm run dev
 ```
 
-Open the `subt.link` URL that shows up in your terminal to go to the Subtrace dashboard:
-
-![image](https://github.com/user-attachments/assets/215a92a5-1afe-4ca1-b1ba-5d804415eea7)
-
 That's it! You can now visit [localhost:3000](localhost:3000) and make requests
-to the Next.js server that show up on the Subtrace dashboard in realtime.
+to the Next.js server that show up on the Subtrace [dashboard](https://subtrace.dev/dashboard)
+in realtime.
