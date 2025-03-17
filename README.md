@@ -29,4 +29,6 @@ npm install
 
 That's it! You can now visit [localhost:3000](localhost:3000) and make requests
 to the Next.js server that show up on the Subtrace [dashboard](https://subtrace.dev/dashboard)
-in realtime.
+in realtime:
+
+https://github.com/user-attachments/assets/3695b023-f47b-4080-a29d-dca29bf26606
